@@ -300,7 +300,7 @@ public class ArbolAVL<T extends Comparable<T>> {
         }
         // Rotaciones
         boolean bandera = false;
-        NodoAVL<T> papaTemp = temp.getPapa();
+        NodoAVL<T> papaTemp = temp;
         while (!bandera && papaTemp != null) {
             papaTemp.setFe(calculaFe(papaTemp));
             if (papaTemp.getFe() == 1 || papaTemp.getFe() == -1) {
